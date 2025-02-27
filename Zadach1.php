@@ -1,14 +1,13 @@
 <?php
-$i = readline ("Введите число для вычисления факториала");
-if ($i<=0) {
-echo "Ошибка! Введите положительное числою. \n";
+$a = readline ("Введите число для вычисления факториала");
+if ($a < 0) {
+    echo "Факториал отрицательного числа не существует.\n";
+} else {
+    $factorial = 1;
+    $counter = 1;
+    while ($counter <= $i) {
+        $factorial *= $counter;
+        $counter++;
+    }
+    echo "Факториал числа $i равен $factorial.\n";
 }
-else {
-$factor=1;
-$c = 1;
-while ($c<=$counter);
-$factorial *= $counter;
-        $counter++; 
-echo "Факториал числа $number равен $factorial.\n"
-}
-
