@@ -1,16 +1,16 @@
 <?php
-$Numbers = [];
+$numbers = [];
 
 for ($num = 2; $num <= 100; $num++) {
-    $Prime = true; 
+    $prime = true; 
     for ($i = 2; $i <= sqrt($num); $i++) {
         if ($num % $i == 0) {
-            $Prime = false; 
+            $prime = false; 
             break; 
         }
     }
-    if ($Prime) {
-        $Numbers[] = $num;
+    if ($prime) {
+        $numbers[] = $num;
     }
 }
-echo "Простые числа от 1 до 100: " . implode(", ", $Numbers) . "\n";
+echo "Простые числа от 1 до 100: " . implode(", ", $numbers) . "\n";
